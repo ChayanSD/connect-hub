@@ -16,7 +16,6 @@ const authSchema = z.object({
 const Auth = () => {
   const navigate = useNavigate();
   const { toast } = useToast();
-  const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
@@ -38,45 +37,23 @@ const Auth = () => {
     try {
       const validatedData = authSchema.parse({ email, password });
 
-      if (isLogin) {
-        const { error } = await supabase.auth.signInWithPassword({
-          email: validatedData.email,
-          password: validatedData.password,
-        });
+      const { error } = await supabase.auth.signInWithPassword({
+        email: validatedData.email,
+        password: validatedData.password,
+      });
 
-        if (error) {
-          if (error.message.includes("Invalid login credentials")) {
-            throw new Error("Invalid email or password");
-          }
-          throw error;
+      if (error) {
+        if (error.message.includes("Invalid login credentials")) {
+          throw new Error("Invalid email or password");
         }
-
-        toast({
-          title: "Welcome back!",
-          description: "Successfully signed in",
-        });
-        navigate("/dashboard");
-      } else {
-        const { error } = await supabase.auth.signUp({
-          email: validatedData.email,
-          password: validatedData.password,
-          options: {
-            emailRedirectTo: `${window.location.origin}/dashboard`,
-          },
-        });
-
-        if (error) {
-          if (error.message.includes("already registered")) {
-            throw new Error("This email is already registered. Please sign in instead.");
-          }
-          throw error;
-        }
-
-        toast({
-          title: "Account created!",
-          description: "Please check your email to confirm your account",
-        });
+        throw error;
       }
+
+      toast({
+        title: "Welcome back!",
+        description: "Successfully signed in",
+      });
+      navigate("/dashboard");
     } catch (error) {
       if (error instanceof z.ZodError) {
         toast({
@@ -103,7 +80,7 @@ const Auth = () => {
           <Building2 className="w-12 h-12 text-accent mb-4" />
           <h1 className="text-3xl font-bold mb-2">Admin Portal</h1>
           <p className="text-muted-foreground text-center">
-            {isLogin ? "Sign in to access your dashboard" : "Create an admin account"}
+            Sign in to access your dashboard
           </p>
         </div>
 
@@ -135,18 +112,9 @@ const Auth = () => {
             className="w-full bg-gradient-to-r from-accent to-accent/90"
             disabled={loading}
           >
-            {loading ? "Please wait..." : isLogin ? "Sign In" : "Sign Up"}
+            {loading ? "Please wait..." : "Sign In"}
           </Button>
         </form>
-
-        <div className="mt-6 text-center">
-          <button
-            onClick={() => setIsLogin(!isLogin)}
-            className="text-sm text-muted-foreground hover:text-accent transition-colors"
-          >
-            {isLogin ? "Need an account? Sign up" : "Already have an account? Sign in"}
-          </button>
-        </div>
 
         <div className="mt-6 text-center">
           <Button
