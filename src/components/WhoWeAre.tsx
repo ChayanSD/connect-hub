@@ -28,23 +28,27 @@ const WhoWeAre = () => {
   return (
     <section id="who-we-are" className="py-24 px-6 bg-muted/30">
       <div className="container mx-auto">
-        <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
+        <div className="max-w-3xl mx-auto text-center mb-4 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold">Who We Are</h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Integrated Desk Services is a premier provider of comprehensive workspace solutions. 
-            With years of experience and a commitment to excellence, we deliver exceptional 
-            facility management and desk services tailored to your business needs.
-          </p>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Our team of dedicated professionals brings expertise, reliability, and innovation 
-            to every project, ensuring your workspace operates at peak efficiency.
-          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <div className="flex flex-col lg:flex-row items-center gap-10 mt-10">
+          <div>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            Fargo Space Partners Limited offers the Integrated Desk Services for IAM, a dedicated platform explicitly designed to serve Independent Asset Managers (IAMs). Operating as a Main-IAM, our mission is to "Empower Growth, Enable the Future," providing the scalable infrastructure necessary for our Sub-IAM partners to achieve client success.
+          </p>
+          <br/>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            We deliver the IAM One-Stop Workstation, a comprehensive and integrated suite of fintech solutions and desk services that replaces generic facility support. Our platform and dedicated team—including specialized Fargo Space Traders—streamline all aspects of your operations, from account opening and regulatory compliant communication to centralized trade support, automated risk control settings, and efficient retrocession management. We are committed to injecting expertise, reliability, and innovation into your entire operational lifecycle.
+          </p>
+          </div>
+          <img className="w-full lg:w-1/2" src="/who-we-are.png" alt="Image about fargo space" />
+        </div>
+
+        {/* <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {values.map((value, index) => (
-            <Card 
-              key={index} 
+            <Card
+              key={index}
               className="p-6 text-center hover:shadow-lg transition-all duration-300 border-border/50 hover:border-accent/50"
             >
               <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
@@ -54,7 +58,7 @@ const WhoWeAre = () => {
               <p className="text-sm text-muted-foreground">{value.description}</p>
             </Card>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

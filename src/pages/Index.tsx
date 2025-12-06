@@ -15,8 +15,8 @@ const Index = () => {
         <nav className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <Building2 className="w-8 h-8 text-accent" />
-              <span className="text-xl font-bold">Integrated Desk Services</span>
+              {/* <Building2 className="w-8 h-8 text-accent" />
+              <span className="text-xl font-bold">Integrated Desk Services</span> */}
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#who-we-are" className="text-sm hover:text-accent transition-colors">Who We Are</a>
