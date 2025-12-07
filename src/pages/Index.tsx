@@ -63,7 +63,7 @@ const Index = () => {
                 <span className="relative z-10">Contact</span>
               </a>
 
-              <Link to="/auth">
+              <Link to="/auth" className="ml-5">
                 <Button variant="outline" size="sm">Admin Login</Button>
               </Link>
 
