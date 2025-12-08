@@ -42,7 +42,14 @@ const WhoWeAre = () => {
             We deliver the IAM One-Stop Workstation, a comprehensive and integrated suite of fintech solutions and desk services that replaces generic facility support. Our platform and dedicated team—including specialized Fargo Space Traders—streamline all aspects of your operations, from account opening and regulatory compliant communication to centralized trade support, automated risk control settings, and efficient retrocession management. We are committed to injecting expertise, reliability, and innovation into your entire operational lifecycle.
           </p>
           </div>
-          <img className="w-full lg:w-1/2" src="/who-we-are.png" alt="Image about fargo space" />
+          {/* <img className="w-full lg:w-1/2" src="/whoweare.jpeg" alt="Image about fargo space" /> */}
+          <img
+            className="w-full lg:w-1/2 select-none pointer-events-none"
+            src="/WhoWeARE.png"
+            alt="Image about fargo space"
+            draggable={false}
+            onDragStart={(e) => e.preventDefault()}
+          />
         </div>
 
         {/* <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">

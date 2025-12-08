@@ -1,11 +1,6 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Building2 } from "lucide-react";
+import { Building2 } from "lucide-react";
 
 const Hero = () => {
-  const scrollToContact = () => {
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <section className="w-full overflow-hidden">
 
@@ -25,31 +20,6 @@ const Hero = () => {
               <span className="block text-accent">Solutions</span>
             </h1>
 
-            {/* <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
-              Premium desk services and facility management for modern businesses
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
-              <Button
-                size="lg"
-                onClick={scrollToContact}
-                className="bg-gradient-to-r from-primary to-primary/90 hover:shadow-elegant transition-all duration-300"
-              >
-                Get Started <ArrowRight className="ml-2 w-4 h-4" />
-              </Button>
-
-              <Button
-                size="lg"
-                variant="outline"
-                onClick={() =>
-                  document
-                    .getElementById("who-we-are")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
-              >
-                Learn More
-              </Button>
-            </div> */}
           </div>
 
           {/* RIGHT SIDE IMAGE WITH DIAGONAL CLIP */}
@@ -61,9 +31,11 @@ const Hero = () => {
               }}
             >
               <img
-                src="/hero-image.jpg" // <-- Replace with your real image
-                alt="Hero"
-                className="w-full h-full object-cover"
+                src="/mainSection.png"
+                alt="About Fargo Space"
+                className="w-full rounded-lg shadow-lg select-none"
+                draggable={false}
+                onDragStart={(e) => e.preventDefault()}
               />
             </div>
           </div>
