@@ -45,7 +45,7 @@ const WhoWeAre = () => {
           {/* <img className="w-full lg:w-1/2" src="/whoweare.jpeg" alt="Image about fargo space" /> */}
           <img
             className="w-full lg:w-1/2 select-none pointer-events-none"
-            src="/WhoWeARE.png"
+            src="/whoweare.jpeg"
             alt="Image about fargo space"
             draggable={false}
             onDragStart={(e) => e.preventDefault()}

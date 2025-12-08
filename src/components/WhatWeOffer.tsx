@@ -81,30 +81,6 @@ const WhatWeOffer = () => {
 
         </div>
 
-        {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {services.map((service, index) => (
-            <Card 
-              key={index}
-              className="p-8 hover:shadow-elegant transition-all duration-300 border-border/50 hover:border-accent/30"
-            >
-              <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center mb-6">
-                <service.icon className="w-7 h-7 text-accent" />
-              </div>
-              
-              <h3 className="text-2xl font-semibold mb-3">{service.title}</h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">{service.description}</p>
-              
-              <ul className="space-y-2">
-                {service.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-start gap-2 text-sm">
-                    <CheckCircle2 className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </Card>
-          ))}
-        </div> */}
       </div>
     </section>
   );
