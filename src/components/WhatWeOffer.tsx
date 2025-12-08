@@ -1,39 +1,4 @@
-import { Card } from "@/components/ui/card";
-import { CheckCircle2, Briefcase, Shield, Clock, Sparkles, HeadphonesIcon } from "lucide-react";
-
 const WhatWeOffer = () => {
-  const services = [
-    {
-      icon: Briefcase,
-      title: "Comprehensive Desk Services",
-      description: "Full-service desk management including reception, administrative support, and visitor management",
-      features: ["Professional reception services", "Mail and package handling", "Visitor registration and screening"]
-    },
-    {
-      icon: Shield,
-      title: "Facility Management",
-      description: "Complete facility oversight ensuring your workspace operates seamlessly",
-      features: ["Maintenance coordination", "Vendor management", "Safety and compliance"]
-    },
-    {
-      icon: Clock,
-      title: "24/7 Support",
-      description: "Round-the-clock availability for your critical business needs",
-      features: ["Emergency response", "After-hours support", "Flexible scheduling"]
-    },
-    {
-      icon: Sparkles,
-      title: "Premium Space Solutions",
-      description: "Customized workspace arrangements designed for productivity",
-      features: ["Space optimization", "Modern amenities", "Flexible configurations"]
-    },
-    {
-      icon: HeadphonesIcon,
-      title: "Concierge Services",
-      description: "Elevated hospitality services for your team and guests",
-      features: ["Event coordination", "Catering arrangements", "Travel assistance"]
-    }
-  ];
 
   return (
     <section id="what-we-offer" className="py-24 px-6">
@@ -52,11 +17,15 @@ const WhatWeOffer = () => {
             src="/what-we-offer.png" 
             alt="Integrated Desk Services"
             className="shadow-lg w-full object-cover"
+            draggable={false}
+            onDragStart={(e) => e.preventDefault()}
           />
           <img
             src="/portfolio.png" 
             alt="Integrated Desk Services"
             className="shadow-lg w-full object-cover"
+            draggable={false}
+            onDragStart={(e) => e.preventDefault()}
           />
         </div>
 

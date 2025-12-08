@@ -30,10 +30,11 @@ const Hero = () => {
                 clipPath: "polygon(12% 0%, 100% 0%, 100% 100%, 0% 100%)",
               }}
             >
-              <img
+             <img
                 src="/mainSection.png"
                 alt="About Fargo Space"
-                className="w-full rounded-lg shadow-lg select-none"
+                className="w-full h-full object-cover rounded-lg shadow-lg select-none
+                          animate-in fade-in slide-in-from-right-4 duration-1000"
                 draggable={false}
                 onDragStart={(e) => e.preventDefault()}
               />
