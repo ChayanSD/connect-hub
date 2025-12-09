@@ -146,7 +146,7 @@ const ContactSection = () => {
           </Card>
 
           <div className="space-y-8">
-            <Card className="p-6 flex items-start gap-4 hover:shadow-lg transition-all">
+            {/* <Card className="p-6 flex items-start gap-4 hover:shadow-lg transition-all">
               <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
                 <Mail className="w-6 h-6 text-accent" />
               </div>
@@ -154,7 +154,21 @@ const ContactSection = () => {
                 <h3 className="font-semibold mb-1">Email</h3>
                 <p className="text-muted-foreground">info@integrateddeskservices.com</p>
               </div>
-            </Card>
+            </Card> */}
+
+            <Card className="p-6 flex items-start gap-4 hover:shadow-lg transition-all">
+                  <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-6 h-6 text-accent" />
+                  </div>
+
+                  <div className="min-w-0"> 
+                    <h3 className="font-semibold mb-1">Email</h3>
+                    <p className="text-muted-foreground break-words">
+                      info@integrateddeskservices.com
+                    </p>
+                  </div>
+                </Card>
+
 
             <Card className="p-6 flex items-start gap-4 hover:shadow-lg transition-all">
               <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
