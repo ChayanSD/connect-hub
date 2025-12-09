@@ -26,13 +26,13 @@ const WhoWeAre = () => {
   ];
 
   return (
-    <section id="who-we-are" className="py-24 px-6 bg-muted/30">
+    <section id="who-we-are" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 bg-muted/30">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-4 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold">Who We Are</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">Who We Are</h2>
         </div>
 
-        <div className="flex flex-col lg:flex-row items-center gap-10 mt-10">
+        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-10 mt-8 sm:mt-10">
           <div>
           <p className="text-lg text-muted-foreground leading-relaxed">
             Fargo Space Partners Limited offers the Integrated Desk Services for IAM, a dedicated platform explicitly designed to serve Independent Asset Managers (IAMs). Operating as a Main-IAM, our mission is to "Empower Growth, Enable the Future," providing the scalable infrastructure necessary for our Sub-IAM partners to achieve client success.
@@ -45,10 +45,12 @@ const WhoWeAre = () => {
           {/* <img className="w-full lg:w-1/2" src="/whoweare.jpeg" alt="Image about fargo space" /> */}
           <img
             className="w-full lg:w-1/2 select-none pointer-events-none"
-            src="/whoweare.jpeg"
+            src="/whoweare.webp"
             alt="Image about fargo space"
             draggable={false}
             onDragStart={(e) => e.preventDefault()}
+            loading="lazy"
+            decoding="async"
           />
         </div>
 

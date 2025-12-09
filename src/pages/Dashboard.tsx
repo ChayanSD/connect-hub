@@ -132,7 +132,7 @@ const Dashboard = () => {
               <span className="text-xl font-bold">Admin Dashboard</span>
             </div>
             <div className="flex items-center gap-4">
-              <span className="text-sm text-muted-foreground">{user?.email}</span>
+              <span className="text-sm text-muted-foreground hidden md:block">{user?.email}</span>
               <Button variant="outline" onClick={handleSignOut}>
                 <LogOut className="w-4 h-4 mr-2" />
                 Sign Out
@@ -142,10 +142,10 @@ const Dashboard = () => {
         </nav>
       </header>
 
-      <main className="container mx-auto px-6 py-12">
-        <div className="mb-8">
-          <h1 className="text-4xl font-bold mb-2">Contact Submissions</h1>
-          <p className="text-muted-foreground">Manage and review incoming contact requests</p>
+      <main className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+        <div className="mb-6 sm:mb-8">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">Contact Submissions</h1>
+          <p className="text-sm sm:text-base text-muted-foreground">Manage and review incoming contact requests</p>
         </div>
 
         <div className="grid gap-6">

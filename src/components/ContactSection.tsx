@@ -72,16 +72,16 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-24 px-6 bg-muted/30">
+    <section id="contact" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 bg-muted/30">
       <div className="container mx-auto">
-        <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold">Contact Us</h2>
-          <p className="text-lg text-muted-foreground">
+        <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16 space-y-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">Contact Us</h2>
+          <p className="text-base sm:text-lg text-muted-foreground">
             Ready to elevate your workspace? Get in touch with our team
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
           <Card className="p-8">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-2">

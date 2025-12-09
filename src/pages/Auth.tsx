@@ -75,10 +75,10 @@ const Auth = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center px-6 bg-gradient-to-br from-primary/5 via-background to-accent/5">
-      <Card className="w-full max-w-md p-8">
+      <Card className="w-full max-w-md p-6 md:p-8">
         <div className="flex flex-col items-center mb-8">
           <Building2 className="w-12 h-12 text-accent mb-4" />
-          <h1 className="text-3xl font-bold mb-2">Admin Portal</h1>
+          <h1 className="text-2xl sm:text-3xl font-bold mb-2">Admin Portal</h1>
           <p className="text-muted-foreground text-center">
             Sign in to access your dashboard
           </p>

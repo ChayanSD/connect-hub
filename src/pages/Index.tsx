@@ -6,7 +6,12 @@ import WhoWeAre from "@/components/WhoWeAre";
 import WhatWeOffer from "@/components/WhatWeOffer";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
-import { Building2 } from "lucide-react";
+import { Building2, Menu } from "lucide-react";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 const Index = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,7 +35,7 @@ const Index = () => {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-border shadow-sm">
         
-        <nav className="container mx-auto px-6">
+        <nav className="container mx-auto px-4 sm:px-6">
           <div className="flex items-center justify-between">
 
             {/* LEFT — Logo appears when scrolled */}
@@ -45,7 +50,7 @@ const Index = () => {
               )}
             </div>
 
-            {/* RIGHT NAV */}
+            {/* RIGHT NAV - DESKTOP */}
             <div className="hidden md:flex items-center">
 
               <a href="#who-we-are" className="relative text-white font-medium px-6 py-4 block group">
@@ -67,6 +72,33 @@ const Index = () => {
                 <Button variant="outline" size="sm">Admin Login</Button>
               </Link>
 
+            </div>
+
+            {/* MOBILE NAV */}
+            <div className="md:hidden">
+              <Sheet>
+                <SheetTrigger asChild>
+                  <Button variant="ghost" size="icon">
+                    <Menu className="h-6 w-6" />
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+                  <nav className="flex flex-col gap-4 mt-8">
+                    <a href="#who-we-are" className="text-lg font-medium hover:text-accent transition-colors">
+                      Who We Are
+                    </a>
+                    <a href="#what-we-offer" className="text-lg font-medium hover:text-accent transition-colors">
+                      What We Offer
+                    </a>
+                    <a href="#contact" className="text-lg font-medium hover:text-accent transition-colors">
+                      Contact
+                    </a>
+                    <Link to="/auth" className="mt-4">
+                      <Button className="w-full">Admin Login</Button>
+                    </Link>
+                  </nav>
+                </SheetContent>
+              </Sheet>
             </div>
           </div>
         </nav>

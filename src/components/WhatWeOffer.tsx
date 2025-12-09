@@ -4,7 +4,7 @@ const WhatWeOffer = () => {
     <section id="what-we-offer" className="py-24 px-6">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold">What We Offer</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">What We Offer</h2>
           <p className="text-lg text-muted-foreground">
             Comprehensive solutions designed to elevate your workspace experience
           </p>
@@ -14,18 +14,22 @@ const WhatWeOffer = () => {
           {/* Left Image */}
         <div className="w-full space-y-10">
           <img
-            src="/what-we-offer.png" 
+            src="/what-we-offer.webp" 
             alt="Integrated Desk Services"
             className="shadow-lg w-full object-cover"
             draggable={false}
             onDragStart={(e) => e.preventDefault()}
+            loading="lazy"
+            decoding="async"
           />
           <img
-            src="/portfolio.png" 
+            src="/portfolio.webp" 
             alt="Integrated Desk Services"
             className="shadow-lg w-full object-cover"
             draggable={false}
             onDragStart={(e) => e.preventDefault()}
+            loading="lazy"
+            decoding="async"
           />
         </div>
 
