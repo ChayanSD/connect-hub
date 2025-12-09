@@ -31,7 +31,7 @@ const Hero = () => {
               }}
             >
              <img
-                src="/mainSection.png"
+                src="/mainSectionImage.jpg"
                 alt="About Fargo Space"
                 className="w-full h-full object-cover rounded-lg shadow-lg select-none
                           animate-in fade-in slide-in-from-right-4 duration-1000"
