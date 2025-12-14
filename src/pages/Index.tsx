@@ -43,58 +43,80 @@ const Index = () => {
               {isScrolled && (
                 <div className="flex items-center space-x-2 animate-in fade-in slide-in-from-bottom-4">
                   <Building2 className="w-7 h-7 text-accent" />
-                  <span className="text-lg font-semibold">
-                    Integrated Desk Services
-                  </span>
+                  <div className="flex flex-col">
+                      <span className="text-lg font-bold text-gray-900">Fargo Space</span>
+                      <span className="text-xs text-gray-500">Integrated Desk Services</span>
+                    </div>
                 </div>
               )}
             </div>
 
-            {/* RIGHT NAV - DESKTOP */}
-            <div className="hidden md:flex items-center">
-
-              <a href="#who-we-are" className="relative text-white font-medium px-6 py-4 block group">
-                <span className="absolute inset-0 bg-[#2F6E8E] -skew-x-12 transition-all duration-300 group-hover:bg-[#245669]" />
-                <span className="relative z-10">Who We Are</span>
+            <div className="hidden md:flex items-center space-x-2 my-4">
+              <a href="#who-we-are" className="px-5 py-2 text-sm font-medium text-gray-700 hover:text-[#2F6E8E] transition-colors relative group">
+                Who We Are
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#2F6E8E] transition-all duration-300 group-hover:w-full"></span>
               </a>
 
-              <a href="#what-we-offer" className="relative text-white font-medium px-6 py-4 block group">
-                <span className="absolute inset-0 bg-[#D2C1A6] -skew-x-12 transition-all duration-300 group-hover:bg-[#bca98c]" />
-                <span className="relative z-10">What We Offer</span>
+              <a href="#what-we-offer" className="px-5 py-2 text-sm font-medium text-gray-700 hover:text-[#2F6E8E] transition-colors relative group">
+                What We Offer
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#2F6E8E] transition-all duration-300 group-hover:w-full"></span>
               </a>
 
-              <a href="#contact" className="relative text-white font-medium px-6 py-4 block group">
-                <span className="absolute inset-0 bg-[#C44A30] -skew-x-12 transition-all duration-300 group-hover:bg-[#a33d28]" />
-                <span className="relative z-10">Contact</span>
+              <a href="#contact" className="px-5 py-2 text-sm font-medium text-gray-700 hover:text-[#2F6E8E] transition-colors relative group">
+                Contact
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#2F6E8E] transition-all duration-300 group-hover:w-full"></span>
               </a>
 
-              <Link to="/auth" className="ml-5">
-                <Button variant="outline" size="sm">Admin Login</Button>
+              <Link to="/auth" className="ml-4">
+                <Button 
+                  className="bg-[#2F6E8E] hover:bg-[#245669] text-white shadow-md hover:shadow-lg transition-all duration-200"
+                  size="sm"
+                >
+                  Admin Login
+                </Button>
               </Link>
-
             </div>
 
-            {/* MOBILE NAV */}
+            {/* Mobile Menu */}
             <div className="md:hidden">
               <Sheet>
                 <SheetTrigger asChild>
-                  <Button variant="ghost" size="icon">
+                  <Button variant="ghost" size="icon" className="hover:bg-gray-100">
                     <Menu className="h-6 w-6" />
                   </Button>
                 </SheetTrigger>
-                <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-                  <nav className="flex flex-col gap-4 mt-8">
-                    <a href="#who-we-are" className="text-lg font-medium hover:text-accent transition-colors">
+                <SheetContent side="right" className="w-[280px] sm:w-[350px]">
+                  <div className="flex items-center space-x-2 mb-8 pb-4 border-b">
+                    <Building2 className="w-7 h-7 text-accent" />
+                    <div className="flex flex-col">
+                      <span className="text-lg font-bold text-gray-900">Fargo Space</span>
+                      <span className="text-xs text-gray-500">Integrated Desk Services</span>
+                    </div>
+                  </div>
+                  
+                  <nav className="flex flex-col gap-3">
+                    <a 
+                      href="#who-we-are" 
+                      className="px-4 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-[#2F6E8E] rounded-lg transition-colors"
+                    >
                       Who We Are
                     </a>
-                    <a href="#what-we-offer" className="text-lg font-medium hover:text-accent transition-colors">
+                    <a 
+                      href="#what-we-offer" 
+                      className="px-4 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-[#2F6E8E] rounded-lg transition-colors"
+                    >
                       What We Offer
                     </a>
-                    <a href="#contact" className="text-lg font-medium hover:text-accent transition-colors">
+                    <a 
+                      href="#contact" 
+                      className="px-4 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-[#2F6E8E] rounded-lg transition-colors"
+                    >
                       Contact
                     </a>
                     <Link to="/auth" className="mt-4">
-                      <Button className="w-full">Admin Login</Button>
+                      <Button className="w-full bg-[#2F6E8E] hover:bg-[#245669] text-white">
+                        Admin Login
+                      </Button>
                     </Link>
                   </nav>
                 </SheetContent>
