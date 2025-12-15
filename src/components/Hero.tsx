@@ -6,12 +6,12 @@ const Hero = () => {
     <section className="w-full overflow-hidden">
 
       {/* ---------------- TOP WHITE SECTION ---------------- */}
-      <div className="relative bg-white py-12 sm:py-24 px-0 sm:px-6">
+      <div className="relative bg-white py-12 sm:py-24  sm:px-6">
 
-        <div className="container mx-auto flex items-center space-x-2 mb-8 sm:mb-12"> 
+        <div className="container mx-auto px-5 sm:px-6 flex items-center space-x-2 mb-8 sm:mb-12"> 
           <img src={logo} alt="Fargo Space Logo" className="w-[200px] sm:w-[300px]" />
           </div>
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2">
+        <div className="container mx-auto px-5 sm:px-6 grid grid-cols-1 sm:grid-cols-2">
 
           {/* LEFT SIDE CONTENT (Your existing content) */}
           <div className="flex-1 max-w-xl text-center md:text-left space-y-6 sm:space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
@@ -30,7 +30,7 @@ const Hero = () => {
               className="absolute inset-0 [clip-path:polygon(0_0,100%_0,100%_100%,0_100%)] md:[clip-path:polygon(12%_0%,100%_0%,100%_100%,0%_100%)]"
             >
               <picture>
-                <source srcSet="/mainSectionImage.webp" type="image/webp" />
+                <source srcSet="/mainSectionImage.jpg" type="image/webp" />
                 <img
                   src="/mainSectionImage.jpg"
                   alt="About Fargo Space"
@@ -48,7 +48,7 @@ const Hero = () => {
 
       {/* ---------------- BLUE INFO STRIP ---------------- */}
       <div className="bg-gradient-to-r from-accent to-accent/90 text-white py-12 sm:py-16 md:py-20 px-4 sm:px-6">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-start">
+        <div className="container mx-auto px-3 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-start">
 
           <div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-light leading-snug">
