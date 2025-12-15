@@ -7,6 +7,7 @@ import { Card } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { Building2 } from "lucide-react";
 import { z } from "zod";
+import logo from "../../public/fargoLogo.png"
 
 const authSchema = z.object({
   email: z.string().trim().email("Invalid email address"),
@@ -76,10 +77,10 @@ const Auth = () => {
   return (
     <div className="min-h-screen flex items-center justify-center px-6 bg-gradient-to-br from-primary/5 via-background to-accent/5">
       <Card className="w-full max-w-md p-6 md:p-8">
-        <div className="flex flex-col items-center mb-8">
-          <Building2 className="w-12 h-12 text-accent mb-4" />
-          <h1 className="text-2xl sm:text-3xl font-bold mb-2">Admin Portal</h1>
-          <p className="text-muted-foreground text-center">
+        <div onClick={() => navigate("/")}  className="flex flex-col items-center mb-8">
+        <img src={logo} alt="Fargo Space Logo" className="w-[200px] cursor-pointer h-20 sm:w-[200px] object-cover" />
+              <span className="text-[15px] ml-[40px] cursor-pointer pr-7 absolute bg-white  text-gray-400 mt-10 font-semibold tracking-wider">ADMIN</span>
+         <p className="text-muted-foreground text-center">
             Sign in to access your dashboard
           </p>
         </div>
