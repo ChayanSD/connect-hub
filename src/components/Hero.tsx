@@ -1,18 +1,16 @@
 import { Building2 } from "lucide-react";
+import logo from "../../public/fargoLogo.png"
 
 const Hero = () => {
   return (
     <section className="w-full overflow-hidden">
 
       {/* ---------------- TOP WHITE SECTION ---------------- */}
-      <div className="relative bg-white pt-24 pb-20 px-6">
+      <div className="relative bg-white py-12 sm:py-24 px-0 sm:px-6">
 
-        <div className="container mx-auto flex items-center space-x-2 mb-8 sm:mb-12">
-          <Building2 className="w-6 sm:w-8 h-6 sm:h-8 text-accent" />
-          <div className="flex flex-col">
-            <span className="text-lg font-bold text-gray-900">Fargo Space</span>
-            <span className="text-xs text-gray-500">Integrated Desk Services</span>
-          </div> </div>
+        <div className="container mx-auto flex items-center space-x-2 mb-8 sm:mb-12"> 
+          <img src={logo} alt="Fargo Space Logo" className="w-[200px] sm:w-[300px]" />
+          </div>
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2">
 
           {/* LEFT SIDE CONTENT (Your existing content) */}
@@ -49,7 +47,7 @@ const Hero = () => {
       </div>
 
       {/* ---------------- BLUE INFO STRIP ---------------- */}
-      <div className="bg-[#0B4566] text-white py-12 sm:py-16 md:py-20 px-4 sm:px-6">
+      <div className="bg-gradient-to-r from-accent to-accent/90 text-white py-12 sm:py-16 md:py-20 px-4 sm:px-6">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-start">
 
           <div>
