@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import { Building2, LogOut, Mail, Phone, Building, Trash2 } from "lucide-react";
 import type { User } from "@supabase/supabase-js";
+import logo from "../../public/fargoLogo.png"
 
 interface Contact {
   id: string;
@@ -127,9 +128,9 @@ const Dashboard = () => {
       <header className="bg-background border-b border-border">
         <nav className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <Building2 className="w-8 h-8 text-accent" />
-              <span className="text-xl font-bold">Admin Dashboard</span>
+            <div className="flex items-center">
+              <img onClick={() => navigate("/")} src={logo} alt="Fargo Space Logo" className="w-[200px] cursor-pointer h-20 sm:w-[200px] object-cover" />
+              <span className="text-[15px] ml-[80px] pr-7 absolute bg-white  text-gray-400 mt-6 font-semibold tracking-wider">ADMIN</span>
             </div>
             <div className="flex items-center gap-4">
               <span className="text-sm text-muted-foreground hidden md:block">{user?.email}</span>
