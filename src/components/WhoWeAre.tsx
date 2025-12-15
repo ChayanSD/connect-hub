@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Award, Users, Target, Zap } from "lucide-react";
+import SectionTitle from "@/components/SectionTitle";
 
 const WhoWeAre = () => {
   const values = [
@@ -27,9 +28,9 @@ const WhoWeAre = () => {
 
   return (
     <section id="who-we-are" className="py-16 sm:py-20 md:py-24 px-0 sm:px-6 bg-muted/30">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-5 sm:px-6">
         <div className="max-w-3xl mx-auto text-center mb-4 space-y-4">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">Who We Are</h2>
+          <SectionTitle title="Who We Are" className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl" />
         </div>
 
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-10 mt-8 sm:mt-10">

@@ -7,6 +7,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
+import SectionTitle from "@/components/SectionTitle";
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
@@ -73,9 +74,9 @@ const ContactSection = () => {
 
   return (
     <section id="contact" className="py-16 sm:py-20 md:py-24 px-0 sm:px-6 bg-muted/30">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-5 sm:px-6">
         <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16 space-y-4">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">Contact Us</h2>
+          <SectionTitle title="Contact Us" className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl" />
           <p className="text-base sm:text-lg text-muted-foreground">
             Ready to elevate your workspace? Get in touch with our team
           </p>
