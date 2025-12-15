@@ -129,8 +129,8 @@ const Dashboard = () => {
         <nav className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <img onClick={() => navigate("/")} src={logo} alt="Fargo Space Logo" className="w-[200px] cursor-pointer h-20 sm:w-[200px] object-cover" />
-              <span className="text-[15px] ml-[80px] pr-7 absolute bg-white  text-gray-400 mt-6 font-semibold tracking-wider">ADMIN</span>
+              <img onClick={() => navigate("/")} src={logo} alt="Fargo Space Partners Logo" className="w-[200px] cursor-pointer h-20 sm:w-[200px] object-cover" />
+              {/* <span className="text-[15px] ml-[80px] pr-7 absolute bg-white  text-gray-400 mt-6 font-semibold tracking-wider">ADMIN</span> */}
             </div>
             <div className="flex items-center gap-4">
               <span className="text-sm text-muted-foreground hidden md:block">{user?.email}</span>
