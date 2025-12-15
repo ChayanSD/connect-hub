@@ -43,7 +43,7 @@ const Index = () => {
             <div className="transition-all duration-300">
               {isScrolled && (
                 <div className="flex items-center space-x-2 animate-in fade-in slide-in-from-bottom-4">    
-                    <img src={logo} alt="Fargo Space Logo" className="w-[200px] h-20 sm:w-[200px] object-cover" />
+                    <img src={logo} alt="Fargo Space Partners Logo" className="w-[200px] h-20 sm:w-[200px] object-cover" />
                 </div>
               )}
             </div>
@@ -84,7 +84,7 @@ const Index = () => {
                 </SheetTrigger>
                 <SheetContent side="right" className="w-[280px] sm:w-[350px]">
                   <div className="flex items-center space-x-2 mb-8 pb-4 border-b">
-                    <img src={logo} alt="Fargo Space Logo" className="w-[200px] sm:w-[300px]" />
+                    <img src={logo} alt="Fargo Space Partners Logo" className="w-[200px] sm:w-[300px]" />
                     </div>
                   
                   <nav className="flex flex-col gap-3">

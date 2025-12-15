@@ -78,10 +78,9 @@ const Auth = () => {
     <div className="min-h-screen flex items-center justify-center px-6 bg-gradient-to-br from-primary/5 via-background to-accent/5">
       <Card className="w-full max-w-md p-6 md:p-8">
         <div onClick={() => navigate("/")}  className="flex flex-col items-center mb-8">
-        <img src={logo} alt="Fargo Space Logo" className="w-[200px] cursor-pointer h-20 sm:w-[200px] object-cover" />
-              <span className="text-[15px] ml-[40px] cursor-pointer pr-7 absolute bg-white  text-gray-400 mt-10 font-semibold tracking-wider">ADMIN</span>
-         <p className="text-muted-foreground text-center">
-            Sign in to access your dashboard
+        <img src={logo} alt="Fargo Space Partners Logo" className="w-[200px] cursor-pointer h-20 sm:w-[200px] object-cover" />
+        <p className="text-muted-foreground text-center">
+            Sign in to access your Admin Dashboard
           </p>
         </div>
 

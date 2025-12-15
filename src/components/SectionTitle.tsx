@@ -11,7 +11,7 @@ const SectionTitle = ({ title, className = "" }: SectionTitleProps) => {
       >
         {title}
         <span
-          className="absolute left-0 bottom-0 block h-1 w-1/2 bg-accent transition-all duration-300 group-hover:w-full"
+          className="absolute left-1/2 bottom-0 block h-1 w-1/2 -translate-x-1/2 transform bg-accent transition-all duration-300 group-hover:w-full group-hover:left-0 group-hover:translate-x-0"
           aria-hidden="true"
         />
       </h2>

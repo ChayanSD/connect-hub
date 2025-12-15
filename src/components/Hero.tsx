@@ -19,8 +19,9 @@ const Hero = () => {
               Empower Growth,
               <span className="block text-accent">Enable the Future</span>
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed">
-              Your dedicated Main-IAM partner delivering the IAM One-Stop Workstation for seamless operations and client success.
+            <p className="text-sm sm:text-lg md:text-xl text-gray-600 leading-relaxed">
+              Main-IAM partner delivering the IAM One-Stop Workstation for seamless
+              operations and client success.
             </p>
           </div>
 
@@ -33,7 +34,7 @@ const Hero = () => {
                 <source srcSet="/mainSectionImage.jpg" type="image/webp" />
                 <img
                   src="/mainSectionImage.jpg"
-                  alt="About Fargo Space"
+                  alt="About Fargo Space Partners Limited"
                   className="w-full h-full object-cover rounded-lg shadow-lg select-none
                            animate-in fade-in slide-in-from-right-4 duration-1000"
                   draggable={false}

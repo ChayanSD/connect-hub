@@ -187,7 +187,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h3 className="font-semibold mb-1">Location</h3>
-                <p className="text-muted-foreground">Fargo Space, Business District</p>
+                <p className="text-muted-foreground">Fargo Space Partners Limited, Business District</p>
               </div>
             </Card>
           </div>
