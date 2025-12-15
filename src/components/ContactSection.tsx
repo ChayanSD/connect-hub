@@ -72,7 +72,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 bg-muted/30">
+    <section id="contact" className="py-16 sm:py-20 md:py-24 px-0 sm:px-6 bg-muted/30">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16 space-y-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">Contact Us</h2>
@@ -137,7 +137,7 @@ const ContactSection = () => {
 
               <Button 
                 type="submit" 
-                className="w-full bg-gradient-to-r from-accent to-accent/90 hover:shadow-lg transition-all"
+                className="w-full bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg transition-all duration-200"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
