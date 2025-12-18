@@ -73,7 +73,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-16 sm:py-20 md:py-24 px-0 sm:px-6 bg-muted/30">
+    <section id="contact" className="py-16 sm:py-20 md:py-24 px-0 sm:px-6 ">
       <div className="container mx-auto px-5 sm:px-6">
         <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16 space-y-4">
           <SectionTitle title="Contact Us" className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl" />
