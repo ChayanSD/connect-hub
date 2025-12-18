@@ -3,7 +3,7 @@ import SectionTitle from "@/components/SectionTitle";
 const WhatWeOffer = () => {
 
   return (
-    <section id="what-we-offer" className="py-24 ">
+    <section id="what-we-offer" className="py-24 bg-muted/30 ">
       <div className="container mx-auto px-5 sm:px-6">
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
           <SectionTitle title="What We Offer" className="text-3xl md:text-4xl lg:text-5xl" />
@@ -64,7 +64,7 @@ const WhatWeOffer = () => {
             <li className="flex items-start gap-3">
               <span className="text-black-600 text-xl mt-1">•</span>
               <p>
-                <strong>Automated Retrocession Management:</strong> Automatic calculation and reporting of revenues and commissions through a pre-set fee schedule—eliminating manual work.
+                <strong>Automated Fee Management:</strong> Automatic calculation and reporting of revenues and commissions through a pre-set fee schedule—eliminating manual work.
               </p>
             </li>
 
